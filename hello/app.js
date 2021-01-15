@@ -35,6 +35,8 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', hello.view);
 
+var app = express();
+var hello = require("./routes/hello");
 app.get('/hello/:userName', hello.view);
 
 // Example route
